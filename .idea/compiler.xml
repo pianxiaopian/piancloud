@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="piancloud-api" />
+        <module name="piancloud-rest" />
+        <module name="piancloud-api-basic" />
+        <module name="piancloud-common" />
+        <module name="piancloud-job" />
+        <module name="piancloud-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="piancloud" target="1.8" />
+      <module name="piancloud-api" target="1.5" />
+      <module name="piancloud-api-basic" target="1.5" />
+      <module name="piancloud-common" target="1.5" />
+      <module name="piancloud-gateway" target="1.5" />
+      <module name="piancloud-job" target="1.5" />
+      <module name="piancloud-rest" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
