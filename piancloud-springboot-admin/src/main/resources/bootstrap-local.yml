@@ -1,0 +1,28 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: pian-springboot-admin
+  cloud:
+    nacos:
+      discovery:
+        ##服务的注册
+        server-addr: localhost:8848
+        ##不注册到nacos
+        register-enabled: false
+      config:
+        ###配置中心连接地址
+        server-addr: localhost:8848
+        ###分组
+        group: DEFAULT_GROUP
+        ###类型
+        file-extension: yaml
+        refresh-enabled: true
+  profiles:
+    active: local
+  main:
+    allow-bean-definition-overriding: true
+  security:
+    user:
+      name: pian-admin
+      password: pian.admin

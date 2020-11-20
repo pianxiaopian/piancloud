@@ -1,0 +1,50 @@
+server:
+  port: 8002
+####服务网关名称
+spring:
+  profiles:
+    active: local
+  main:
+    allow-bean-definition-overriding: true
+  boot:
+    admin:
+      client:
+        url: http://piancloud-springboot-admin
+  application:
+    name: piancloud-gateway
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8718 #sentinel控制台访问路径
+        port: 8719
+      eager: true #心跳启动
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        ###配置中心连接地址
+        server-addr: localhost:8848
+        ###分组
+        group: DEFAULT_GROUP
+        ###类型
+        file-extension: yaml
+        refresh-enabled: true
+    loadbalancer:
+      retry:
+        enabled: true
+    gateway:
+      discovery:
+        locator:
+          ####开启以服务id去注册中心上获取转发地址
+          enabled: true
+#开启acutor端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      #打开端点详情
+      show-details: always
+

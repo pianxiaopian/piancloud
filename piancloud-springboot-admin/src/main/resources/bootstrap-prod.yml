@@ -1,0 +1,22 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: pian-springboot-admin
+  cloud:
+    nacos:
+      discovery:
+        ##服务的注册
+        server-addr: ${nacos.prod.ip}:${nacos.prod.port}
+      config:
+        ###配置中心连接地址
+        server-addr: ${nacos.prod.ip}:${nacos.prod.port}
+        ###分组
+        group: DEFAULT_GROUP
+        ###类型
+        file-extension: yaml
+        refresh-enabled: true
+  profiles:
+    active: prod
+  main:
+    allow-bean-definition-overriding: true
