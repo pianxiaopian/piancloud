@@ -18,13 +18,21 @@
 ~~~
 piancloud     
 ├── piancloud-api              // 接口工程
+│     └── ecloud-oos-api      //单点登录服务接口工程  
+├── piancloud-biz              //接口实现服务工程
+│     └── ecloud-oos-biz      //单点登录服务实现工程[8100]  
 ├── piancloud-common         // 公共模块工程
+│     └── ecloud-common-core      //公共核心工具模块
 ├── piancloud-gateway             // 服务网关[8002]
 ├── piancloud-job           // 调度工程
 ├── piancloud-rest          // rest工程
 ├── piancloud-springboot-admin          //监控服务工程[8001]
 ├──pom.xml                // 公共依赖
 ~~~
+
+
+
+
 
 
 - 注意事项

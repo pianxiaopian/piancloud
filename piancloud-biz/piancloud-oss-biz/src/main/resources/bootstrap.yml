@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: local #表示激活本地环境
+    #active: dev #表示激活开发环境
+    #active: test #表示激活测试环境
+    #active: prod #表示激活准生产环境
