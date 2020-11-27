@@ -6,22 +6,38 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="piancloud-api" />
+        <module name="piancloud-oss-api" />
         <module name="piancloud-rest" />
         <module name="piancloud-api-basic" />
-        <module name="piancloud-common" />
+        <module name="piancloud-common-core" />
         <module name="piancloud-job" />
         <module name="piancloud-gateway" />
+        <module name="piancloud-springboot-admin" />
+        <module name="piancloud-oss-biz" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="piancloud" target="1.8" />
-      <module name="piancloud-api" target="1.5" />
+      <module name="piancloud-api" target="1.8" />
       <module name="piancloud-api-basic" target="1.5" />
-      <module name="piancloud-common" target="1.5" />
-      <module name="piancloud-gateway" target="1.5" />
+      <module name="piancloud-biz" target="1.8" />
+      <module name="piancloud-common" target="1.8" />
+      <module name="piancloud-common-core" target="1.8" />
+      <module name="piancloud-gateway" target="1.8" />
       <module name="piancloud-job" target="1.5" />
+      <module name="piancloud-oss-api" target="1.8" />
+      <module name="piancloud-oss-biz" target="1.8" />
       <module name="piancloud-rest" target="1.5" />
+      <module name="piancloud-springboot-admin" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="piancloud-common-core" options="-parameters" />
+      <module name="piancloud-gateway" options="-parameters" />
+      <module name="piancloud-oss-api" options="-parameters" />
+      <module name="piancloud-oss-biz" options="-parameters" />
+      <module name="piancloud-springboot-admin" options="-parameters" />
+    </option>
   </component>
 </project>
