@@ -84,3 +84,8 @@ gen_code
 db/db_back_dir/
 /redis/
 
+*.iml
+
+.idea/
+
+*/target

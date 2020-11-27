@@ -6,8 +6,11 @@ import com.piancloud.oss.entity.vo.UserInfoVO;
 import io.swagger.annotations.Api;
 import java.util.List;
 import javax.validation.Valid;
+
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @description: 单点登录接口服务
@@ -22,7 +25,7 @@ public interface OssService {
      * 查询全部用户信息
      * @return
      */
-    @PostMapping("/selectDemo")
+    @GetMapping("/selectDemo")
     Result<List<UserInfoRespDTO>> selectDemo();
 
     /**
@@ -30,4 +33,10 @@ public interface OssService {
      */
     @PostMapping("/save")
     Result save(@RequestBody @Valid UserInfoVO userInfoVO) throws Exception;
+
+    /**
+     * 搜索用户信息
+     */
+    @GetMapping("/search")
+    Result<List<UserInfoRespDTO>> searchDemo(@RequestParam(required = false) String searchKey);
 }

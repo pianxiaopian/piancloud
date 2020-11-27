@@ -5,10 +5,15 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/piancloud.iml" filepath="$PROJECT_DIR$/.idea/piancloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/piancloud-api/piancloud-api.iml" filepath="$PROJECT_DIR$/piancloud-api/piancloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/piancloud-api/piancloud-api-basic/piancloud-api-basic.iml" filepath="$PROJECT_DIR$/piancloud-api/piancloud-api-basic/piancloud-api-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piancloud-biz/piancloud-biz.iml" filepath="$PROJECT_DIR$/piancloud-biz/piancloud-biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/piancloud-common/piancloud-common.iml" filepath="$PROJECT_DIR$/piancloud-common/piancloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piancloud-common/piancloud-common-core/piancloud-common-core.iml" filepath="$PROJECT_DIR$/piancloud-common/piancloud-common-core/piancloud-common-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/piancloud-gateway/piancloud-gateway.iml" filepath="$PROJECT_DIR$/piancloud-gateway/piancloud-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/piancloud-job/piancloud-job.iml" filepath="$PROJECT_DIR$/piancloud-job/piancloud-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piancloud-api/piancloud-oss-api/piancloud-oss-api.iml" filepath="$PROJECT_DIR$/piancloud-api/piancloud-oss-api/piancloud-oss-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piancloud-biz/piancloud-oss-biz/piancloud-oss-biz.iml" filepath="$PROJECT_DIR$/piancloud-biz/piancloud-oss-biz/piancloud-oss-biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/piancloud-rest/piancloud-rest.iml" filepath="$PROJECT_DIR$/piancloud-rest/piancloud-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piancloud-springboot-admin/piancloud-springboot-admin.iml" filepath="$PROJECT_DIR$/piancloud-springboot-admin/piancloud-springboot-admin.iml" />
     </modules>
   </component>
 </project>
